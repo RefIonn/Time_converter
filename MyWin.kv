@@ -1,0 +1,58 @@
+<Container>:
+    days_input: days_input
+    FloatLayout:
+        TextInput:
+            text: ''
+            id: days_input
+            pos_hint: {'x': 0.1, 'y': 0.85}
+            size_hint: 0.8, 0.1
+            hint_text: 'Введите количество дней'
+            hint_text_color: 'magenta'
+            multiline: 'False'
+        Button:
+            text: 'Конвертация'
+            color: 'cyan'
+            background_color: 'red'
+            pos_hint: {'x': 0.9, 'y': 0.85}
+            size_hint: 0.1, 0.1
+            on_release: root.convert()
+        Label:
+            text: 'Часы'
+            pos_hint: {'left': 1, 'y': 0.7}
+            size_hint: 0.1, 0.1
+        Label:
+            text: 'Минуты'
+            pos_hint: {'left': 1, 'y': 0.6}
+            size_hint: 0.1, 0.1
+        Label:
+            text: 'Секунды'
+            pos_hint: {'left': 1, 'y': 0.5}
+            size_hint: 0.1, 0.1
+        Label:
+            text: 'Миллисекунды'
+            pos_hint: {'left': 1, 'y': 0.4}
+            size_hint: 0.1, 0.1
+        Label:
+            text: 'Недели'
+            pos_hint: {'left': 1, 'y': 0.3}
+            size_hint: 0.1, 0.1
+        Label:
+            id: hours_output
+            pos_hint: {'x': 0.1, 'y': 0.73}
+            size_hint: 0.1, 0.05
+        Label:
+            id: minutes_output
+            pos_hint: {'x': 0.1, 'y': 0.63}
+            size_hint: 0.1, 0.05
+        Label:
+            id: seconds_output
+            pos_hint: {'x': 0.1, 'y': 0.53}
+            size_hint: 0.1, 0.05
+        Label:
+            id: milliseconds_output
+            pos_hint: {'x': 0.1, 'y': 0.43}
+            size_hint: 0.1, 0.05
+        Label:
+            id: weeks_output
+            pos_hint: {'x': 0.1, 'y': 0.33}
+            size_hint: 0.1, 0.05
