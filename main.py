@@ -1,12 +1,8 @@
 import kivy
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.floatlayout import FloatLayout
 from kivy.core.window import Window
-from kivy.lang import Builder
 from kivy.properties import ObjectProperty
-from kivy.properties import StringProperty
-from kivy.clock import Clock
 
 
 class Container(BoxLayout):
